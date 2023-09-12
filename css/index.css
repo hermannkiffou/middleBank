@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans Unicode', 'Lucida Grande';
+}
+
+nav ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.indexNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 50px;
+
+}
+
+.indexNav .infoContact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
