@@ -1,31 +1,90 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Lucida Sans Unicode', 'Lucida Grande';
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 nav ul{
+    font-size: 15px;
     text-decoration: none;
     display: flex;
     flex-direction: row;
 }
 nav ul li{
+    font-weight: bold;
+    font-size: 15px;
     text-decoration: none;
     margin-right: 30px;
+    list-style-type: none;
 }
 
+nav ul li a{
+    text-decoration: none;
+    color: blue;
+}
+
+
 .indexNav{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 50px;
-
+    background-color: white;
+    position: fixed;
+    width: 100vw;
 }
 
 .indexNav .infoContact{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
+    margin-right: 50px;
+}
+.divText{
+    margin-left: 10px;
+}
+
+.middleBank{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.connex .option a{
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.connex .option{
+    background-color: blue;
+    height: 30px;
+    width: 130px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 30px;
+    margin-left: 10px;
+    padding-top: 4px;
+}
+
+.connex{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-left: 75vw;
+    margin-top: 80px;
+    position: fixed;
+}
+
+.accueil{
+    background-color: indigo;
+    height: 100vh;
+    width: 100vw;
 }
