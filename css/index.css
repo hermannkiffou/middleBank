@@ -13,6 +13,12 @@ nav ul{
     display: flex;
     flex-direction: row;
 }
+nav ul li a{
+    text-decoration: none;
+    color: #16243E;
+}
+
+
 nav ul li{
     font-weight: bold;
     font-size: 15px;
@@ -21,9 +27,8 @@ nav ul li{
     list-style-type: none;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: blue;
+nav ul li.active{
+    border-bottom: 5px solid #16243E;
 }
 
 
@@ -36,6 +41,8 @@ nav ul li a{
     position: fixed;
     width: 100vw;
     height: 80px;
+    z-index: 2;
+    border-bottom: 10px solid #16243E;
 }
 
 .indexNav .infoContact{
@@ -70,7 +77,7 @@ nav ul li a{
     height: 30px;
     width: 130px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 30px;
     margin-left: 10px;
     padding-top: 4px;
@@ -84,18 +91,19 @@ nav ul li a{
     margin-left: 75vw;
     margin-top: 80px;
     position: fixed;
+    z-index: 3;
 }
 
 .accueil{
     background-color: #004F70;
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    align-items: start;
     position:inherit;
-    padding-top: 200px;
+    padding-top: 150px;
     color: white;
 }
 .accueil .texts .p1{
@@ -106,6 +114,7 @@ nav ul li a{
     font-size: 50px;
     font-weight: bold;
 }
+
 .accueil .texts .p3{
     font-size: 20px;
     margin-top: 20px;
@@ -121,7 +130,7 @@ nav ul li a{
 div .petitCercle{
     position: relative;
     top: -160px;
-    right: -230px;
+    right: -220px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,6 +140,7 @@ div .petitCercle{
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    z-index: 1;
 }
 
 div .cerclePointille{
@@ -153,4 +163,183 @@ div .cerclePointille{
 }
 .cerclePointille p.p3{
     font-weight: bold;
+}
+
+.images div img{
+    width: 280px;
+    height: 450px;
+    margin-left: 10px;
+}
+.apropos{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.apropos .infoApropos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 170px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.apropos .textApropos{
+    color: #004f70;
+    font-size: 40px;
+    font-weight: bold;
+}
+.apropos .infoApropos .sectionImg{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.apropos .infoApropos .sectionImg .img1{
+    width: 400px;
+    height: 200px;
+}
+.apropos .infoApropos .sectionImg .img2{
+    width: 250px;
+    height: 350px;
+    display: flex;
+    position: relative;
+    bottom: 120px;
+    right: 180px;
+    border: 10px solid #16243E;
+    background-color: #004F70;
+}
+
+.apropos .sectionText .p1{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #16243E;
+}
+
+.apropos .sectionText .p2{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color:#004F70;
+    margin-left: -20px;
+    font-weight: bold;
+}
+
+.apropos .sectionText{
+    margin-left: -50px;
+    margin-top: -70px;
+}
+
+
+.footer{
+    background-color: #16243E;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.footer .blockFooter .titre{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer .infoText{
+    font-size: 17px;
+    color: white;
+    margin-top: 20px;
+}
+.footer .blocFinal1 .imgs img{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto;
+}
+.footer .blocFinal1 .imgs{
+    height: 40px;
+    width: 40px;
+    background-color: #004F70;
+    display: flex;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.footer .blocFinal1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.footer .blocFinal3{
+    background-color: white;
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.footer .blocFinal3 input{
+    background-color: white;
+    height: 34px;
+    width: 190px;
+    border: none;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.footer .boutonSend{
+    background-color: #004F70;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.footer .boutonSend img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin: 5px auto;
+    border-radius: 15px;
+}
+
+.footer .dateAide img{
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+}
+.footer .dateAide p{
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+}
+
+.footer .dateAide{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.blockFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+
 }
