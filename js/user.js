@@ -71,6 +71,6 @@ class Entity{
 
 }
 
-let ent = new Entity();
-ent.modNom({id: ent.getId(), type:"User", name:"OXANNE KOUADIO", email:"oxane@gmail.com", password:"password"});
+// let ent = new Entity();
+// ent.modNom({id: ent.getId(), type:"User", name:"OXANNE KOUADIO", email:"oxane@gmail.com", password:"password"});
 
