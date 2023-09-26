@@ -1,3 +1,4 @@
+
 class Entity{
     constructor(){
         let idEntity = 1;
@@ -27,18 +28,18 @@ class Entity{
 
     ajo(user){
         this.action = "ajo";
-        let ajoUser = this.entity.find(p => p.email == user.email);
+        let ajoUser = this.entity.find(p => p.login == user.login);
         if(ajoUser != undefined){
-            alert("Cette entité existe déja !");
+            alert("Cet utilisateur existe déjà !");
         }else{
             this.entity.push(user);
-            alert("Utilisateur sauvegardé !");
+            alert("Votre compte à été créé avec succès !");
             this.save();
         }
     }
 
     modNom(user){
-        let modUser = this.entity.find(p => p.email == user.email);
+        let modUser = this.entity.find(p => p.login == user.login);
         if(modUser != undefined){
             modUser.name = user.name;
             this.save();
@@ -49,7 +50,7 @@ class Entity{
     }
 
     modPass(user){
-        let modPassUser = this.entity.find(p => p.email == user.email);
+        let modPassUser = this.entity.find(p => p.login == user.login);
         if(modPassUser != undefined){
             modPassUser.password = user.password;
             this.save();
@@ -60,7 +61,7 @@ class Entity{
     }
 
     sup(user){
-        let supUser = this.entity.find(p => p.email == user.email);
+        let supUser = this.entity.find(p => p.login == user.login);
         if(supUser != undefined){
             this.entity = this.entity.filter(p => p.id != user.id);
             this.save();
@@ -70,7 +71,4 @@ class Entity{
     }
 
 }
-
-// let ent = new Entity();
-// ent.modNom({id: ent.getId(), type:"User", name:"OXANNE KOUADIO", email:"oxane@gmail.com", password:"password"});
 

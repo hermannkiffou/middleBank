@@ -9,24 +9,24 @@
     <div class="laPricipale">
         <div class="form">
             <p class="titre">INSCRIPTION</p>
-    
-            <select name="profil" id="profil" onchange="{changePlaceholder()}">
-            <option value="">SELECTIONNEZ VOTRE PROFIL</option>
+
+            <select name="profil" id="profil" onchange="{changePlaceholder()}" aria-placeholder="PROFIL">
+            <option value="PROFIL"></option>
             <option value="PARTICULIER">PARTICULIER</option>
             <option value="BANQUE">BANQUE</option>
             </select>
 
-            <input type="text" placeholder="NON ET PRENONS" id="name">
-            <input type="text" placeholder="TELEPHONE" id="login">
-            <input type="text" placeholder="MOT DE PASSE" id="password">
-            <input type="text" placeholder="CONFIRMATION DE MOT DE PASSE" id="confirmPassword">
-            <button onclick="{majInscription()}">S'INSCRIRE</button>
-
+            <input type="text" placeholder="" id="name">
+            <input type="text" placeholder="" id="login">
+            <input type="password" placeholder="MOT DE PASSE" id="password">
+            <input type="password" placeholder="CONFIRMATION DE MOT DE PASSE" id="confirmPassword">
+            <button onclick="{ajoInscription()}">S'INSCRIRE</button>
             <div class="tiret-bas"></div>
             <a href="">J'AI DEJA UN COMPTE</a>
 
         </div>
     </div>
 </body>
+<script src="../js/user.js"></script>
 <script src="../js/inscription.js"></script>
 </html>
