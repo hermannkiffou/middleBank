@@ -25,7 +25,50 @@ function changePlaceholder(){
     }else{
         alert("AJO");
         let entity = new Entity();
-        entity.ajo({id: entity.getId(), profil: profil, name: name, login: login, password: password});
-        document.reload();
+        entity.ajo({
+          id: entity.getId(), 
+          profil: profil, 
+          name: name, 
+          login: login, 
+          password: password
+        }); 
     }
   }
+
+  function confirmLogin(){
+    let entity = new Entity();
+    let ent = entity.getConnectUser();
+    let confirmCode = document.getElementById("confirmCode").value
+    if(ent != null){
+      alert("Entre");
+      if(confirmCode != ""){
+        if(confirmCode == "010200"){
+          alert("Bienvenue, votre inscription et bien terminné !");
+          window.location.href = "../html/pricipale.html";
+        }else{
+          alert("Le code que vous avez entré n'est pas correcte !");
+        }
+      }else{
+        alert("Veiller renseigner le code de confirmation");
+      }
+    }else{
+      alert("Echec de connexion de l'utilisateur");
+    }
+  }
+
+ function showUser(){
+
+
+    var connectUser = getConnectUser();
+      if(confirmUser != null){
+        alert("Userget");
+        var element = document.getElementById("p2");
+        element.innerHTML = "Hello World!";
+      }else{
+        alert("Aucun utilisateur connecté !")
+        alert("SHOW");
+    }
+
+  }
+
+  

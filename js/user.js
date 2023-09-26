@@ -1,5 +1,6 @@
 
 class Entity{
+
     constructor(){
         let idEntity = 1;
         let action = "";
@@ -10,6 +11,15 @@ class Entity{
             localStorage.setItem("idEntity", idEntity);
         }else{
             this.entity = JSON.parse(entity);
+        }
+    }
+
+    getConnectUser(){
+        let connexUser = localStorage.getItem("UserConnect");
+        if(connexUser == null){
+            Allert("Aucun utilisateur connecté !");
+        }else{
+            return connexUser;
         }
     }
 
@@ -35,6 +45,8 @@ class Entity{
             this.entity.push(user);
             alert("Votre compte à été créé avec succès !");
             this.save();
+            localStorage.setItem("UserConnect", JSON.stringify(user));
+            window.location.href = "../html/confirmInscription.html";
         }
     }
 
