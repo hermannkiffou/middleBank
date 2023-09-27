@@ -57,18 +57,7 @@ function changePlaceholder(){
   }
 
  function showUser(){
-
-
-    var connectUser = getConnectUser();
-      if(confirmUser != null){
-        alert("Userget");
-        var element = document.getElementById("p2");
-        element.innerHTML = "Hello World!";
-      }else{
-        alert("Aucun utilisateur connecté !")
-        alert("SHOW");
-    }
-
+    alert("Bonjour et ");
   }
 
   
