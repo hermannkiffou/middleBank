@@ -19,7 +19,21 @@ class Entity{
         if(connexUser == null){
             Allert("Aucun utilisateur connecté !");
         }else{
-            return connexUser;
+            return JSON.parse(connexUser);
+        }
+    }
+
+    getUserByEmailAndPassword(login, pass){
+        let onUser = this.entity.find(p => p.login == login);
+        if(onUser !== undefined){
+            if(onUser.password === pass){
+                localStorage.setItem("UserConnect", JSON.stringify(onUser));
+                return onUser;
+            }else{
+                return null;
+            }
+        }else{
+            return null;
         }
     }
 
@@ -68,7 +82,7 @@ class Entity{
             this.save();
             alert("Mot de passe Modifié avec succès !")
         }else{
-            alert("Echèc de modification. cet utilisateur n'existe pas !")
+            alert("Echèc de modification. cet utilisateur n'existe pas !");
         }
     }
 
