@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmation d'Inscription</title>
+    <link rel="stylesheet" href="../css/confirmInscription.css">
 </head>
-<body onload="{showUser()}">
-    <div class="principale">
-        <p class="titre">CONFIRMEZ VOTRE INSCRIPTIION</p>
-        <p id="p2">
-            <span id="name"></span><br/>
-            Nous avons envoyé un code de confirmation <br/>
-            <span id="login"></span>
-            </p>
-        <p class="label">Entre ce code pour confirmer votre inscription </p>
-        <input id="confirmCode" type="text" placeholder=" -- -- -- ">
-        <button class="confirmLogin" onclick="{confirmLogin();}">CONFIRMER</button>
+<body onload="{showUser()}" class="bodyConfirm">
+    <div class="bodyConfirm">
+        <div class="principale">
+            <p class="titre">CONFIRMEZ VOTRE INSCRIPTIION</p>
+            <p id="p2">
+                <span id="name"></span><br/>
+                Nous avons envoyé un code de confirmation <br/>
+                <span id="login"></span>
+                </p>
+            <p class="label">Entre ce code pour confirmer votre inscription </p>
+            <input id="confirmCode" type="text" placeholder=" -- -- -- ">
+            <button class="confirmLogin" onclick="{confirmLogin()}">CONFIRMER</button>
+        </div>
     </div>
 </body>
-<script src="../js/user.js"></script>
-<script src="../js/inscription.js"></script>
+<script type="text/javascript" src="../js/user.js"></script>
+<script type="text/javascript" src="../js/inscription.js"></script>
+<script type="text/javascript" src="../js/sweetalert.js"></script>
 </html>

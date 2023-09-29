@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bodyConfirm{
+    background-color: #16243E;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    margin-top: -30px;
+}
+.principale{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 30vw;
+    align-items: center;
+    margin: 100px auto;
+    background-color: transparent;
+}
+
+.principale p{
+font-weight: bold;
+font-size: 20px;
+color: #FFF;
+}
+
+.principale input{
+background-color: #FFF;
+border: none;
+height: 50px;
+width: 60%;
+border-radius: 5px;
+font-size: 30px;
+text-align: center;
+}
+
+.principale .confirmLogin{
+    background-color: #004F70;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width: 60%;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    }
