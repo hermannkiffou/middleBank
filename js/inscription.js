@@ -19,9 +19,9 @@ function changePlaceholder(){
     password = document.getElementById('password').value;
     confirmPassword = document.getElementById('confirmPassword').value;
     if(profil == "PROFIL" || name == "" || login == "" || password == "" || confirmPassword ==""){
-        alert("Vous devez renseignez tous les champs de saisie !");
+        swal("Vous devez renseignez tous les champs de saisie !", "","error");
     }else if(password != confirmPassword){
-        alert("Le mot de passe doit être identique à la cofirmation de mot de passe");
+        swal("Le mot de passe doit être identique à la cofirmation de mot de passe","","error");
     }else{
         let entity = new Entity();
         entity.ajo({
@@ -41,16 +41,16 @@ function changePlaceholder(){
     if(ent != null){
       if(confirmCode != ""){
         if(confirmCode == "010200"){
-          alert("Bienvenue, votre inscription et bien terminné !");
+          swal("Bienvenue, votre inscription est bien terminée", "", "success");
           window.location.href = "../html/principale.html";
         }else{
-          alert("Le code que vous avez entré n'est pas correcte !");
+          swal("Le code que vous avez entré n'est pas correcte !", "", "error");
         }
       }else{
-        alert("Veiller renseigner le code de confirmation");
+        swal("Veuiller renseigner le code de confirmation", "", "error");
       }
     }else{
-      alert("Echec de connexion de l'utilisateur");
+      swal("Echec de la connexion de l'utilisateur", "", "success");
     }
   }
 
@@ -63,8 +63,8 @@ function changePlaceholder(){
     }else if(connex.profil === "BANQUE"){
       document.getElementById("name").innerHTML = "La Banque "+connex.name+" a été créée avec succès !";
       document.getElementById("login").innerHTML = "par email au "+connex.login;
-    }else{
-      alert("Erreur de connexion veillez reéssayer ! ");          
+    }else{ 
+      swal("Erreur de la connexion veiller réessayer !", "", "error");        
     }
   }
 s
@@ -77,10 +77,10 @@ s
       if(user != null){
         window.location.href = "../html/principale.html";
       }else{
-        alert("Adresse email ou mot de passe incorrect !");
+        swal("Adresse email ou mot de passe incorrect !", "error");
       }
     }else{
-      alert("Renseigner tous les champs de saisie ! ");
+      swal("Renseignez tous les champs de saisie", "", "error");
     }
   }
 

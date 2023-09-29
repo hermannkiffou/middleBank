@@ -17,7 +17,7 @@ class Entity{
     getConnectUser(){
         let connexUser = localStorage.getItem("UserConnect");
         if(connexUser == null){
-            Allert("Aucun utilisateur connecté !");
+            swal("Utilisateur connecté !", "", "success");
         }else{
             return JSON.parse(connexUser);
         }
@@ -54,10 +54,10 @@ class Entity{
         this.action = "ajo";
         let ajoUser = this.entity.find(p => p.login == user.login);
         if(ajoUser != undefined){
-            alert("Cet utilisateur existe déjà !");
+            swal("CE UTILISATEUR EXISTE DEJA", "", "error");
         }else{
             this.entity.push(user);
-            alert("Votre compte à été créé avec succès !");
+            swal("VOTRE COMPTE A ETE CREE AVEC SUCCES", "", "succes");
             this.save();
             localStorage.setItem("UserConnect", JSON.stringify(user));
             window.location.href = "../html/confirmInscription.html";
@@ -69,9 +69,11 @@ class Entity{
         if(modUser != undefined){
             modUser.name = user.name;
             this.save();
-            alert("Votre nom à été modifié avec succès");
+            
+            swal("Votre nom a été modifié avec succès", "", "success");
         }else{
-            alert("Echèc de modification. cet utilisateur n'existe pas !")
+            alert("")
+            swal("Echèc de modification. cet utilisateur n'existe pas !", "", "error");
         }
     }
 
@@ -80,9 +82,9 @@ class Entity{
         if(modPassUser != undefined){
             modPassUser.password = user.password;
             this.save();
-            alert("Mot de passe Modifié avec succès !")
+            swal("Mot de passe modifié avec succès", "", "success");
         }else{
-            alert("Echèc de modification. cet utilisateur n'existe pas !");
+            swal("Echec de la modification", "", "error");
         }
     }
 
@@ -92,7 +94,7 @@ class Entity{
             this.entity = this.entity.filter(p => p.id != user.id);
             this.save();
         }else{
-            alert("Echec de la suppression ! L'utilisateur n'existe pas !");
+            swal("Echec de la suppresseion! L'utilisateur n'existe pas !", "", "error");
         }
     }
 

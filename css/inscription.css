@@ -1,26 +1,41 @@
 *{
     margin: 0;
     padding: 0;
-    /* background-color: #16243E; */
-
+    
+}
+.body{
+    background-color: #16243E;
 }
 .form .titre{
     font-size: 30px;
+    font-weight: bold;
+    text-align:center;
+    color: #FFF;
 }
 select{
     height: 50px;
     width: 20vw;
     border-radius: 10px;
     text-align: center;
+    background-color: #FFFF;
+    font-size: 20px;
+}
+select option{
+    background-color: #FFF;
+    font-size: 18px;
 }
 input{
     height: 50px;
     width: 20vw;
     border-radius: 5px;
     text-align: center;
+    background-color: #FFF;
+    font-size: 20px;
+    border:3px solid #004F70;
+    border-radius: 10px;
 }
 
-button{
+.btn{
     border: none;
     background-color: #004F70;
     height: 50px;
@@ -28,6 +43,15 @@ button{
     border-radius: 5px;
     color:white;
     font-weight: bold;
+    
+}
+
+.form a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
 }
 .form{
     display: flex;

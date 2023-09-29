@@ -6,7 +6,7 @@
     <title>Inscription</title>
     <link rel="stylesheet" href="../css/inscription.css">
 </head>
-<body>
+<body class="body">
     <div class="laPricipale">
         <div class="form">
             <p class="titre">INSCRIPTION</p>
@@ -19,12 +19,13 @@
             <input type="text" placeholder="" id="login">
             <input type="password" placeholder="MOT DE PASSE" id="password">
             <input type="password" placeholder="CONFIRMATION DE MOT DE PASSE" id="confirmPassword">
-            <button onclick="{ajoInscription()}">S'INSCRIRE</button>
+            <button class="btn" onclick="{ajoInscription()}">S'INSCRIRE</button>
             <div class="tiret-bas"></div>
             <a href="./connexion.html">J'AI DEJA UN COMPTE</a>
         </div>
     </div>
 </body>
+<script src="../js/sweetalert.js"></script>
 <script src="../js/user.js"></script>
 <script src="../js/inscription.js"></script>
 </html>

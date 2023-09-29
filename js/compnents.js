@@ -22,3 +22,13 @@ function importerCompte(){
     var menuOp
 }
 
+function menuIndex(){
+    var menuOption = document.getElementById("menuOption");
+    userMenu.style.visibility = "hidden";
+    if(menuOption.style.visibility == "hidden"){
+        menuOption.style.visibility = "visible";
+    }else{
+        menuOption.style.visibility = "hidden";
+    }
+}
+
