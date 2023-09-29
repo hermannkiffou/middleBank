@@ -5,9 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compte Bancaire</title>
     <link rel="stylesheet" href="../css/compteBancaireStyle.css">
+    <link rel="stylesheet" href="../css/principaleStyle.css">
+    <link rel="stylesheet" href="../css/principaleNavBarStyale.css">
 </head>
 <body>
+
+    <div class="principaleNav">
+        <button class="menu" onclick="{popMenuOption()}">
+            <div class="berger">
+            </div>
+            <p>Menu</p>
+        </button>
+        <div class="recherche">
+            <input type="text" value="Recherche" placeholder="Recherche">
+        </div>
+        <button class="boutonUserProfil">
+        <div class="profil" onclick="{popUserMenu()}">
+                <img src="../media/img3.png" alt="Avatar">
+                <p>Hermann KIFFOU</p>
+        </div>
+    </button>
+    </div>
+
+    <div class="menusPop">
+        <div class="menu menuUser" id="userMenu">
+            <a href="">Profil</a>
+            <button id="deconnexion" onclick="{userDeconect()}"> Déconnexion</button>
+        </div>
+        <div class="menu menuOption" id="menuOption">
+            <a href="./principale.html">Accueil</a>
+            <a href="./compteBancaire.html">Compte Bancaire</a>
+            <a href="">Découvert Bancaire</a>
+            <a href="">Remboursement</a>
+            <a href="">Aide ?</a>
+        </div>
+    </div>
+
+
     <div class="divPrincipale">
+
+
         <p class="compteTitre">
             MENU DE GESTION DES COMPTES BANCAIRES
         </p>
@@ -16,11 +53,11 @@
 
             <div class="bloc compteBancaire">
                 <p class="titreBloc">COMPTE BANCAIRE</p>
-                <button class="creer importation">
+                <button class="creer importation" onclick="{}">
                     Importer un compte
                 </button>
                 <div class="liste listeCompte">
-                    <p class="refCompte">REF (C): 01347485728375874</p>
+                    <p class="refCompte">IBAN : CI01347485728375874</p>
                     <div class="banqueSolde">
                         <p class="banque">BANQUE : <br/>Société Générale</p>
                         <p class="solde">SOLDE : <br/>28 245 000 Fr</p>
@@ -45,7 +82,7 @@
                     Creer un sous compte
                 </button>
                 <div class="liste listeSousCompte">
-                    <p class="refCompte">REF (SC): 01347485728375874</p>
+                    <p class="refCompte">IBAN :CI01347485728375874</p>
                     <div class="banqueSolde">
                         <p class="banque">COMPTE : <br/>01346473647364</p>
                         <p class="solde">SOLDE : <br/>450 000 Fr</p>
@@ -58,4 +95,8 @@
 
     </div>
 </body>
+<script type="text/javascript" src="../js/user.js"></script>
+<script type="text/javascript" src="../js/sweetalert.js"></script>
+<script type="text/javascript" src="../js/compnents.js"></script>
+<script type="text/javascript" src="../js/inscription.js"></script>
 </html>

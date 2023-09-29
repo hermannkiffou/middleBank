@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #16243E; */
+
+}
+.form .titre{
+    font-size: 30px;
+}
+select{
+    height: 50px;
+    width: 20vw;
+    border-radius: 10px;
+    text-align: center;
+}
+input{
+    height: 50px;
+    width: 20vw;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button{
+    border: none;
+    background-color: #004F70;
+    height: 50px;
+    width: 20vw;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+}
+.laPricipale{
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+}

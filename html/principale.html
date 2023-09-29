@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="principaleNav">
-        <button class="menu">
+        <button class="menu" onclick="{popMenuOption()}">
             <div class="berger">
             </div>
             <p>Menu</p>
@@ -17,21 +17,35 @@
         <div class="recherche">
             <input type="text" value="Recherche" placeholder="Recherche">
         </div>
-        <div class="profil">
-            <img src="../media/img3.png" alt="Avatar">
-            <p>Hermann KIFFOU</p>
+        <button class="boutonUserProfil">
+        <div class="profil" onclick="{popUserMenu()}">
+                <img src="../media/img3.png" alt="Avatar">
+                <p>Hermann KIFFOU</p>
         </div>
+    </button>
     </div>
 
+    <div class="menusPop">
+        <div class="menu menuUser" id="userMenu">
+            <a href="">Profil</a>
+            <button id="deconnexion" onclick="{userDeconect()}"> Déconnexion</button>
+        </div>
+        <div class="menu menuOption" id="menuOption">
+            <a href="./compteBancaire.html">Compte Bancaire</a>
+            <a href="">Découvert Bancaire</a>
+            <a href="">Remboursement</a>
+            <a href="">Aide ?</a>
+        </div>
+    </div>
     <div class="accueilPrincipal">
         <p class="bienvenue">Bienvenue sur Middle Bank</p>
         <div class="blocPrincipal">
-            <img src="../media/img1.png" alt="">
+            <img src="../media/imgPrincipale.jpg" alt="">
             <div class="infos">
                 <p class="titre">Fonctionnalité de base</p>
                 <div class="fonctionnalite">
                     <p>
-                        Ici vous pouvez : <br/>
+                        Ici vous pouvez : <br/>sweetalert.min.js
                         * importer vos differents comptes bancaires,<br/>
                         * créer des sous - comptes à partir d'un compte de votre choix,<br/>
                         * éffectuer des virements entre vos differents comptes,<br/>
@@ -46,4 +60,8 @@
         </div>
     </div>
 </body>
+<script type="text/javascript" src="../js/user.js"></script>
+<script type="text/javascript" src="../js/sweetalert.js"></script>
+<script type="text/javascript" src="../js/compnents.js"></script>
+<script type="text/javascript" src="../js/inscription.js"></script>
 </html>

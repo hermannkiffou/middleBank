@@ -73,8 +73,17 @@ background: linear-gradient(#FFF 0%, #FFF 20%, transparent 21%, Transparent 40%,
     margin-left: 10px;
 }
 
+.boutonUserProfil{
+    border: none;
+    background-color: transparent;
+}
+
 .profil img{
     height: 30px;
     width: 30px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }

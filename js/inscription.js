@@ -83,4 +83,9 @@ s
       alert("Renseigner tous les champs de saisie ! ");
     }
   }
+
+  function userDeconect(){
+    localStorage.removeItem("UserConnect");
+    window.location.href = "../index.html";
+  }
   

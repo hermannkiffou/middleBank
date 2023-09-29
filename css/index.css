@@ -211,7 +211,6 @@ div .cerclePointille{
     position: relative;
     bottom: 120px;
     right: 180px;
-    border: 10px solid #16243E;
     background-color: #004F70;
 }
 
@@ -260,7 +259,7 @@ div .cerclePointille{
 .footer .blocFinal1 .imgs img{
     height: 30px;
     width: 30px;
-    border-radius: 15px;
+ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,7 +320,7 @@ div .cerclePointille{
 .footer .dateAide img{
     width: 25px;
     height: 25px;
-    border-radius: 15px;
+    
 }
 .footer .dateAide p{
     font-weight: bold;

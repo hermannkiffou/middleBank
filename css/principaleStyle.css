@@ -56,3 +56,57 @@
     font-weight: bold;
     line-height: 25px;
 }
+
+.menusPop{
+
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menusPop #userMenu{
+    visibility: hidden;
+    position: absolute;
+    margin-left: 85vw;
+    background-color: #16243E;
+    height: 150px;
+    width: 250px;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menusPop .menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.menusPop .menu button{
+ background-color:darkcyan;
+ border: none;
+ height: 40px;
+ width: 200px;
+ margin-left: 30px;
+ border-radius: 10px;
+ font-size: 20px;
+ color:white;
+}
+
+.menusPop #menuOption{
+    visibility: hidden;
+    position: absolute;
+    background-color: #16243E;
+    margin-left: 30px;
+    height: 200px;
+    width: 250px;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
