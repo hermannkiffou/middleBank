@@ -13,10 +13,10 @@ class Compte{
         }
     }
 
-    geonnectUser(){
+    getConnectUser(){
         let connexUser = localStorage.getItem("UserConnect");
         if(connexUser == null){
-            swal("Utilisateur connecté !", "", "success");
+            swal("Echec de connexion !", "", "error");
         }else{
             return JSON.parse(connexUser);
         }

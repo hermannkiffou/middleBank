@@ -52,12 +52,14 @@ function showUserInPrincipale(){
 
   
   function ajoImportation(){
+    var user = new Entity();
+    let cUser = user.getConnectUser();
     var iban, solde, user, code, banque; Date;
     iban = document.getElementById('iban').value;
     solde = "23350000";
-    user = document.getElementById('user').value;
+    user = cUsr.login;
     code = document.getElementById('code').value;
-    banque = "";
+    banque = "ECOBANK";
     date = new Date();
     if(profil == "PROFIL" || name == "" || login == "" || password == "" || confirmPassword ==""){
         swal("Vous devez renseignez tous les champs de saisie !", "","error");
@@ -68,6 +70,7 @@ function showUserInPrincipale(){
         compte.ajo({
           id: compte.getId(), 
           iban: iban, 
+          code : code,
           solde: solde, 
           user: user, 
           bansque: banque,
@@ -77,6 +80,6 @@ function showUserInPrincipale(){
   }
 
   function getAllCompte(){
-    
+
   }
 
