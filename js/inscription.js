@@ -67,7 +67,7 @@ function changePlaceholder(){
       swal("Erreur de la connexion veiller réessayer !", "", "error");        
     }
   }
-s
+
   function userConnexion(){
     let login = document.getElementById("connexLogin").value;
     let password = document.getElementById("connexPassword").value;
@@ -88,4 +88,3 @@ s
     localStorage.removeItem("UserConnect");
     window.location.href = "../index.html";
   }
-  

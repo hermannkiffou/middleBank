@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/principaleNavBarStyale.css">
     <link rel="stylesheet" href="../css/principaleStyle.css">
 </head>
-<body>
+<body onload="{showUserInPrincipale()}">
     <div class="principaleNav">
         <button class="menu" onclick="{popMenuOption()}">
             <div class="berger">
@@ -19,8 +19,8 @@
         </div>
         <button class="boutonUserProfil">
         <div class="profil" onclick="{popUserMenu()}">
-                <img src="../media/img3.png" alt="Avatar">
-                <p>Hermann KIFFOU</p>
+                <img src="../media/avatar.png" alt="Avatar">
+                <p class="userName" id="userName"></p>
         </div>
     </button>
     </div>
@@ -45,7 +45,7 @@
                 <p class="titre">Fonctionnalité de base</p>
                 <div class="fonctionnalite">
                     <p>
-                        Ici vous pouvez : <br/>sweetalert.min.js
+                        Ici vous pouvez : <br/>
                         * importer vos differents comptes bancaires,<br/>
                         * créer des sous - comptes à partir d'un compte de votre choix,<br/>
                         * éffectuer des virements entre vos differents comptes,<br/>

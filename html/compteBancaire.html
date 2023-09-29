@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/principaleStyle.css">
     <link rel="stylesheet" href="../css/principaleNavBarStyale.css">
 </head>
-<body>
+<body onload="{showUserInPrincipale()}">
 
     <div class="principaleNav">
         <button class="menu" onclick="{popMenuOption()}">
@@ -21,8 +21,8 @@
         </div>
         <button class="boutonUserProfil">
         <div class="profil" onclick="{popUserMenu()}">
-                <img src="../media/img3.png" alt="Avatar">
-                <p>Hermann KIFFOU</p>
+                <img src="../media/avatar.png" alt="Avatar">
+                <p id="userName"></p>
         </div>
     </button>
     </div>
@@ -44,7 +44,6 @@
 
     <div class="divPrincipale">
 
-
         <p class="compteTitre">
             MENU DE GESTION DES COMPTES BANCAIRES
         </p>
@@ -53,7 +52,7 @@
 
             <div class="bloc compteBancaire">
                 <p class="titreBloc">COMPTE BANCAIRE</p>
-                <button class="creer importation" onclick="{}">
+                <button class="creer importation" onclick="{loadToImport()}">
                     Importer un compte
                 </button>
                 <div class="liste listeCompte">
