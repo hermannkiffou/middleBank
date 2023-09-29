@@ -82,10 +82,29 @@ input{
     color: #FFF;
     font-weight: bold;
 }
-.formConnex p{
+.connexPricipale p{
     display: flex;
+    color: #FFF;
+    font-weight: bold;
     text-align: center;
-    align-items: center;
+    font-size: 30px;
+}
 
+.connexPricipale a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.connexPricipale{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20vw;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
 }
 

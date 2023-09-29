@@ -64,13 +64,19 @@ function showUserInPrincipale(){
     }else if(password != confirmPassword){
         swal("Le mot de passe doit être identique à la cofirmation de mot de passe","","error");
     }else{
-        let entity = new Entity();
-        entity.ajo({
-          id: entity.getId(), 
-          profil: profil, 
-          name: name, 
-          login: login, 
-          password: password
+        let compte = new Compte();
+        compte.ajo({
+          id: compte.getId(), 
+          iban: iban, 
+          solde: solde, 
+          user: user, 
+          bansque: banque,
+          date : date
         }); 
     }
   }
+
+  function getAllCompte(){
+    
+  }
+
