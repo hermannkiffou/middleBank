@@ -3,6 +3,7 @@
     padding: 0;
     
 }
+
 .body{
     background-color: #16243E;
 }
@@ -64,3 +65,27 @@ input{
     margin: 30px auto;
     justify-content: center;
 }
+
+.formConnex{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+.formConnex button{
+    background-color: #004F70;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #FFF;
+    font-weight: bold;
+}
+.formConnex p{
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
