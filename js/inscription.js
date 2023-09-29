@@ -35,6 +35,7 @@ function changePlaceholder(){
   }
 
   function confirmLogin(){
+    
     let entity = new Entity();
     let ent = entity.getConnectUser();
     let confirmCode = document.getElementById("confirmCode").value
@@ -42,7 +43,7 @@ function changePlaceholder(){
       if(confirmCode != ""){
         if(confirmCode == "010200"){
           swal("Bienvenue, votre inscription est bien terminée", "", "success");
-          window.location.href = "../html/principale.html";
+          window.location.href = "../html/connexion.html";
         }else{
           swal("Le code que vous avez entré n'est pas correcte !", "", "error");
         }

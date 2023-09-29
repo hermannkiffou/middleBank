@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+background-color: #16243E;;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.form p{
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFFF;
+}
+.form .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 20vw;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+}
+.form .bouton{
+    background-color: #004F70;
+    color: #FFF;
+}
+
